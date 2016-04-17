@@ -31,16 +31,24 @@
 </head>
 
 <body>
-    <nav>
-<div class="custom_nav">
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="nav-collapse">
-                 <ul class="nav nav-pills ">
-                    <li class="sidebar-brand">
-                   <a href="#top" class="brand" onclick = $("#menu-close").click(); >CLEO+EVES</a> 
-                    </li>
-                    <ul class="nav nav-pills pull-right">
+
+<nav class="navbar navbar-default">
+  
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#top" class="brand" onclick = $("#menu-close").click(); >CLEO+EVES</a> 
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse nav-stacked" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+                    <ul class="nav nav-pills">
                     <li>
                         <a href="webinquiryform.html" onclick = $("#menu-close").click(); > START YOUR SITE</a>
                     </li>
@@ -57,25 +65,18 @@
                         <a href="#contact" class="right-menu" onclick = $("#menu-close").click(); >CONTACT</a>
                     </li>
                     </ul>
-                </ul>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div><!--/.nav-collapse -->
-           
-        </div><!-- /.navbar-inner -->
-    </div><!-- /.navbar -->
-</div><!--/.custom_nav-->
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
+
     <!-- Navigation -->
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
             <br>
-            <a href="#ourprocess" class="btn btn-light btn-lg tagline center" style="margin-bottom:10%;">One Page Websites for All - Right Away</a>
+            <a href="#ourprocess" class="btn btn-light btn-lg tagline center" style="margin-bottom:10%;">Simplified Web Design - With Monumental Difference</a>
         </div>
     </header>
 
@@ -187,10 +188,24 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.js">
+        
+                //Stack menu when collapsed
+        $('#bs-example-navbar-collapse-1').on('show.bs.collapse', function() {
+            $('.nav-pills').addClass('nav-stacked');
+        });
+
+        //Unstack menu when not collapsed
+        $('#bs-example-navbar-collapse-1').on('hide.bs.collapse', function() {
+            $('.nav-pills').removeClass('nav-stacked');
+        });
+
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js">
+
+    </script>
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -206,6 +221,15 @@
         $("#sidebar-wrapper").toggleClass("active");
     });
 
+    //Stack menu when collapsed
+$('#bs-example-navbar-collapse-1').on('show.bs.collapse', function() {
+    $('.nav-pills').addClass('nav-stacked');
+});
+
+//Unstack menu when not collapsed
+$('#bs-example-navbar-collapse-1').on('hide.bs.collapse', function() {
+    $('.nav-pills').removeClass('nav-stacked');
+});
     // Scrolls to the selected menu item on the page
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {

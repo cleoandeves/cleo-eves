@@ -1598,13 +1598,13 @@ pre code {
 @media (min-width: 992px) {
   .container {
     width: 970px;
-    margin-top: 45px;
+    margin-top: 0px;
   }
 }
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
-    margin-top: 45px;
+    margin-top: 0px;
   }
 }
 .container-fluid {
@@ -4097,7 +4097,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-pills > li > a {
   border-radius: 4px;
-  line-height: 58px;
+  line-height: 28px;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -4175,7 +4175,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -4239,7 +4239,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
-  margin-top: 45px;
+  margin-top: 0px;
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
@@ -4248,7 +4248,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
-    margin-top: 45px;
+    margin-top: 0px;
   }
 }
 .navbar-static-top {
@@ -4300,7 +4300,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
-    margin-top: 45px;
+    margin-top: 0px;
   }
 }
 .navbar-toggle {
